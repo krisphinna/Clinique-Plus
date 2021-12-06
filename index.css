@@ -17,7 +17,7 @@
     align-self: flex-start;
     padding: 10px;
     background: #eeeded;
-    height: 100vh;
+    height: 106vh;
 }
 .logo img {
     width: 160px;
@@ -80,6 +80,12 @@
     max-height: 0;
     transition: max-height 0.3s;
 }
+@media (max-width:650px) {
+    .drop-down {
+        width: 28%;
+        top: 68%;
+    }        
+}
 .drop-down ul li a{
     margin-left: 30px;
     font-weight: 400;
@@ -109,6 +115,11 @@
     position: sticky;
     top: 0;
 }
+@media (max-width:650px) {
+    .nav-bar {
+        display: flex;
+    }        
+}
 .nav-left .nav-right {
     display: flex;
     align-items: center;
@@ -116,6 +127,11 @@
 .nav-left div {
     display: inline-block;
     margin-right: 10px;
+}
+@media (max-width:650px) {
+    .nav-left div {
+        display: block;
+    }        
 }
 .nav-left .menu-img {
     width: 18px;
@@ -129,6 +145,11 @@
     display: flex;
     align-items: center;
     padding: 0 15px;
+}
+@media (max-width:650px) {
+    .search-box {
+        width: 140px;
+    }        
 }
 .search-box img {
     width: 18px;
@@ -183,6 +204,11 @@
     transition: max-height 0.3s;
 
 }
+@media (max-width:650px) {
+    .profile-drop-down {
+        width: 48%;    
+    }        
+}
 .profile-drop-down-height {
     max-height: 450px;
 }
@@ -234,11 +260,21 @@
     padding-left: 8px;
     border-radius: 4px;
 }
+@media (max-width:650px) {
+    .left-staff-info {
+        flex-basis: auto;
+        background: #fff;
+    }        
+}
 .staff-img img {
     width: 170px;
-    position: relative;
     margin: 30px 8%;
     border-radius: 5px;
+}
+@media (max-width:650px) {
+    .staff-img img {
+        width: 110px;    
+    }        
 }
 .staff-img p {
     position: relative;
@@ -248,6 +284,11 @@
 .buttons {
     margin: 50px 10px;
 }
+@media (max-width:650px) {
+    .buttons {
+        margin-left: 0;
+    }        
+}
 .buttons .password {
     width: 130px;
     height: 30px;
@@ -255,6 +296,11 @@
     background: #c07c7c;
     font-weight: 700;
     color: #fff;
+}
+@media (max-width:650px) {
+    .buttons .password {
+        width: 120px;    
+    }        
 }
 .buttons .exit {
     width: 40px;
@@ -279,6 +325,12 @@
     font-size: 16px;
     font-weight: 510;
     color: #461414;
+}
+@media (max-width:650px) {
+    .details-2 {
+        margin-bottom: 15px;
+        font-size: 12px;
+    }        
 }
 
 /*-------right side information styling----*/
@@ -336,6 +388,12 @@
     max-height: 0;
     transition: max-height 0.3s;
 }
+@media (max-width:650px) {
+    .profile-lookup {
+        width: 35%;
+        top: 47%;
+    }        
+}
 .profile-lookup-height {
     max-height: 100%;
 }
@@ -358,6 +416,13 @@
     font-size: 15px;
     font-weight: 500;
 }
+@media (max-width:650px) {
+    .details, .details-1 {
+        font-size: 12px;
+        background: #fff;
+        height: 35px;
+    }        
+}
 
 /*----- footer-------*/
 .footer {
@@ -366,6 +431,11 @@
     position: sticky;
     height: 30px;
     background: #dbdada;
+}
+@media (max-width:650px) {
+    .footer {
+        height: 50px;
+    }        
 }
 .left-side-footer p {
     text-align: center;
@@ -381,6 +451,12 @@
 .right-side-footer p {
     color: #461414;
     margin-right: 30px;
+}
+@media (max-width:650px) {
+    .right-side-footer p {
+        margin-right: 15px;
+        color: #e45656;
+    }        
 }
 .right-side-footer a {
     text-decoration: none;
