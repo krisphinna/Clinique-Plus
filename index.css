@@ -9,6 +9,11 @@
     padding: 5px 1%;
     background: #dbdada;
 }
+@media (max-width:500px) {
+    .container {
+        display: grid;
+    }        
+}
 
 /*------ left side container styling--*/
 
@@ -19,8 +24,18 @@
     background: #eeeded;
     height: 106vh;
 }
+@media (max-width:500px) {
+    .left-side-container {
+        background: #dbdada;
+    }        
+}
 .logo img {
     width: 160px;
+}
+@media (max-width:500px) {
+    .logo img {
+        margin-left: 100px;
+    }        
 }
 .bed-status {
     display: flex;
@@ -29,6 +44,12 @@
     height: 28px;
     background: #c07c7c;
     border-radius: 10px 0 0 10px;
+}
+@media (max-width:500px) {
+    .bed-status {
+        margin: 0 100px 30px;
+        height: 28px;
+    }        
 }
 .left-side-items .bed-status a {
     color: #fff;
@@ -43,12 +64,18 @@
     padding: 0 5px;
     text-decoration: none;
 }
+@media (max-width:500px) {
+    .left-side-items ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }        
+}
 .left-side-items a {
     color: #461414;
     margin-left: 15px;
     font-weight: 500;
     text-decoration: none;
-}
+}        
 .left-side-items img {
     width: 20px;
 }
@@ -80,10 +107,11 @@
     max-height: 0;
     transition: max-height 0.3s;
 }
-@media (max-width:650px) {
+@media (max-width:500px) {
     .drop-down {
-        width: 28%;
-        top: 68%;
+        width: 30%;
+        top: 60%;
+        right: 60%;
     }        
 }
 .drop-down ul li a{
@@ -92,6 +120,11 @@
     color: #461414;
     text-decoration: none;
     padding-top: 5px;
+}
+@media (max-width:500px) {
+    .drop-down ul {
+        display: inline-block;
+    }        
 }
 .drop-down-height {
     max-height: 350px;
@@ -115,9 +148,10 @@
     position: sticky;
     top: 0;
 }
-@media (max-width:650px) {
+@media (max-width:500px) {
     .nav-bar {
         display: flex;
+        position: relative;
     }        
 }
 .nav-left .nav-right {
@@ -128,9 +162,9 @@
     display: inline-block;
     margin-right: 10px;
 }
-@media (max-width:650px) {
+@media (max-width:500px) {
     .nav-left div {
-        display: block;
+        display: flex;
     }        
 }
 .nav-left .menu-img {
@@ -148,7 +182,7 @@
 }
 @media (max-width:650px) {
     .search-box {
-        width: 140px;
+        width: 110px;
     }        
 }
 .search-box img {
@@ -204,9 +238,9 @@
     transition: max-height 0.3s;
 
 }
-@media (max-width:650px) {
+@media (max-width:500px) {
     .profile-drop-down {
-        width: 48%;    
+        max-width: 300px;
     }        
 }
 .profile-drop-down-height {
@@ -250,6 +284,11 @@
     margin-top: 25px;
     margin-left: 20px;
 }
+@media (max-width:500px) {
+    .staff-info-container {
+        display: grid;
+    }        
+}
 
 /*-----left staff information styling----*/
 
@@ -260,10 +299,13 @@
     padding-left: 8px;
     border-radius: 4px;
 }
-@media (max-width:650px) {
+@media (max-width:500px) {
     .left-staff-info {
         flex-basis: auto;
-        background: #fff;
+        background: #eeeded;
+        height: auto;
+        width: 95%;
+        margin-bottom: 20px;
     }        
 }
 .staff-img img {
@@ -271,9 +313,10 @@
     margin: 30px 8%;
     border-radius: 5px;
 }
-@media (max-width:650px) {
+@media (max-width:500px) {
     .staff-img img {
-        width: 110px;    
+        width: 110px;
+        margin: 20px 30%;    
     }        
 }
 .staff-img p {
@@ -281,12 +324,17 @@
     color: #461414;
     margin: -20px 30%;
 }
+@media (max-width:500px) {
+    .staff-img p{
+        margin: 0 130px;
+    }        
+}
 .buttons {
     margin: 50px 10px;
 }
-@media (max-width:650px) {
+@media (max-width:500px) {
     .buttons {
-        margin-left: 0;
+        margin: 20px 80px;        
     }        
 }
 .buttons .password {
@@ -296,11 +344,6 @@
     background: #c07c7c;
     font-weight: 700;
     color: #fff;
-}
-@media (max-width:650px) {
-    .buttons .password {
-        width: 120px;    
-    }        
 }
 .buttons .exit {
     width: 40px;
@@ -326,10 +369,10 @@
     font-weight: 510;
     color: #461414;
 }
-@media (max-width:650px) {
+@media (max-width:500px) {
     .details-2 {
         margin-bottom: 15px;
-        font-size: 12px;
+        font-size: 15px;
     }        
 }
 
@@ -341,6 +384,11 @@
     height: 88vh;
     margin-left: 10px;
     border-radius: 4px;
+}
+@media (max-width:500px) {
+    .right-staff-info {
+        margin-left: -20px;
+    }        
 }
 .title {
     font-size: 15px;
@@ -365,6 +413,11 @@
     margin-left: 5px;
     color: #461414;
 }
+@media (max-width:500px) {
+    .staff-info-2 ul li {
+        margin: 5px;
+    }        
+}
 .info {
     width: 80px;
     height: 30px;
@@ -388,10 +441,11 @@
     max-height: 0;
     transition: max-height 0.3s;
 }
-@media (max-width:650px) {
+@media (max-width:500px) {
     .profile-lookup {
-        width: 35%;
-        top: 47%;
+        max-width: 97%;
+        right: 5px;
+        top: 267%;
     }        
 }
 .profile-lookup-height {
@@ -416,11 +470,13 @@
     font-size: 15px;
     font-weight: 500;
 }
-@media (max-width:650px) {
+@media (max-width:500px) {
     .details, .details-1 {
-        font-size: 12px;
-        background: #fff;
-        height: 35px;
+        font-size: 13px;
+        background: #eeeded;
+        height: 1px;
+        width: 100%;
+        padding: 12px;
     }        
 }
 
@@ -432,9 +488,9 @@
     height: 30px;
     background: #dbdada;
 }
-@media (max-width:650px) {
+@media (max-width:500px) {
     .footer {
-        height: 50px;
+        height: 45px;
     }        
 }
 .left-side-footer p {
@@ -444,6 +500,12 @@
     font-weight: 500;
     color: #461414;
 }
+@media (max-width:500px) {
+    .left-side-footer p {
+        font-size: 12px;
+        margin-left: 5px;
+    }        
+}
 .right-side-footer {
     display: flex;
     margin-right: 20px;
@@ -452,10 +514,11 @@
     color: #461414;
     margin-right: 30px;
 }
-@media (max-width:650px) {
+@media (max-width:500px) {
     .right-side-footer p {
-        margin-right: 15px;
+        margin-right: 10px;
         color: #e45656;
+        font-size: 12px;
     }        
 }
 .right-side-footer a {
